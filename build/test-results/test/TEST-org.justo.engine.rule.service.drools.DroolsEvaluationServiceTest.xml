@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.justo.engine.rule.service.drools.DroolsEvaluationServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-07T18:31:11" hostname="MAC-0234.local" time="3.528">
+  <properties/>
+  <testcase name="basic drool test()" classname="org.justo.engine.rule.service.drools.DroolsEvaluationServiceTest" time="3.528"/>
+  <system-out><![CDATA[15:31:11.260 [Test worker] DEBUG org.kie.api.internal.utils.ServiceDiscoveryImpl - Loading kie.conf from  jar:file:/Users/user/.gradle/caches/modules-2/files-2.1/org.kie/kie-ci/7.43.1.Final/1388136915596d9d3f428ed7b4f097aa0f2e071c/kie-ci-7.43.1.Final.jar!/META-INF/kie.conf in classloader jdk.internal.loader.ClassLoaders$AppClassLoader@3d4eac69
+15:31:11.269 [Test worker] DEBUG org.kie.api.internal.utils.ServiceDiscoveryImpl - Adding Service org.kie.scanner.KieScannerFactoryServiceImpl
+
+15:31:11.276 [Test worker] DEBUG org.kie.api.internal.utils.ServiceDiscoveryImpl - Adding Service org.kie.scanner.MavenClassLoaderResolver
+
+15:31:11.277 [Test worker] DEBUG org.kie.api.internal.utils.ServiceDiscoveryImpl - Loading kie.conf from  jar:file:/Users/user/.gradle/caches/modules-2/files-2.1/org.drools/drools-decisiontables/7.43.1.Final/d6d398d82987f51963e33e237d741258cfd71d35/drools-decisiontables-7.43.1.Final.jar!/META-INF/kie.conf in classloader jdk.internal.loader.ClassLoaders$AppClassLoader@3d4eac69
+15:31:11.279 [Test worker] DEBUG org.kie.api.internal.utils.ServiceDiscoveryImpl - Adding Service org.drools.decisiontable.DecisionTableProviderImpl
+
+15:31:11.279 [Test worker] DEBUG org.kie.api.internal.utils.ServiceDiscoveryImpl - Loading kie.conf from  jar:file:/Users/user/.gradle/caches/modules-2/files-2.1/org.drools/drools-compiler/7.43.1.Final/c608c76301b8db967ae0bf45421c54704a38d6b5/drools-compiler-7.43.1.Final.jar!/META-INF/kie.conf in classloader jdk.internal.loader.ClassLoaders$AppClassLoader@3d4eac69
+15:31:11.287 [Test worker] DEBUG org.kie.api.internal.utils.ServiceDiscoveryImpl - Adding Service org.drools.compiler.kie.builder.impl.KieServicesImpl
+
+15:31:11.291 [Test worker] DEBUG org.kie.api.internal.utils.ServiceDiscoveryImpl - Adding Service org.drools.compiler.builder.impl.KnowledgeBuilderFactoryServiceImpl
+
+15:31:11.291 [Test worker] DEBUG org.kie.api.internal.utils.ServiceDiscoveryImpl - Loading kie.conf from  jar:file:/Users/user/.gradle/caches/modules-2/files-2.1/org.drools/drools-core/7.43.1.Final/d65d345fea8b8216cc83032cfcb6a217fe281b23/drools-core-7.43.1.Final.jar!/META-INF/kie.conf in classloader jdk.internal.loader.ClassLoaders$AppClassLoader@3d4eac69
+15:31:11.293 [Test worker] DEBUG org.kie.api.internal.utils.ServiceDiscoveryImpl - Adding Service org.drools.core.io.impl.ResourceFactoryServiceImpl
+
+15:31:11.295 [Test worker] DEBUG org.kie.api.internal.utils.ServiceDiscoveryImpl - Adding Service org.drools.core.marshalling.impl.MarshallerProviderImpl
+
+15:31:11.296 [Test worker] DEBUG org.kie.api.internal.utils.ServiceDiscoveryImpl - Adding Service org.drools.core.concurrent.ExecutorProviderImpl
+
+15:31:11.296 [Test worker] DEBUG org.kie.api.internal.utils.ServiceDiscoveryImpl - Loading kie.conf from  jar:file:/Users/user/.gradle/caches/modules-2/files-2.1/org.kie/kie-internal/7.43.1.Final/4e416f78e0ddee2efbc77aa07b099d7b236b7eb1/kie-internal-7.43.1.Final.jar!/META-INF/kie.conf in classloader jdk.internal.loader.ClassLoaders$AppClassLoader@3d4eac69
+15:31:11.298 [Test worker] DEBUG org.kie.api.internal.utils.ServiceDiscoveryImpl - Adding Service org.kie.internal.services.KieAssemblersImpl
+
+15:31:11.299 [Test worker] DEBUG org.kie.api.internal.utils.ServiceDiscoveryImpl - Adding Service org.kie.internal.services.KieRuntimesImpl
+
+15:31:11.299 [Test worker] DEBUG org.kie.api.internal.utils.ServiceDiscoveryImpl - Adding Service org.kie.internal.services.KieWeaversImpl
+
+15:31:11.300 [Test worker] DEBUG org.kie.api.internal.utils.ServiceDiscoveryImpl - Adding Service org.kie.internal.services.KieBeliefsImpl
+
+15:31:11.432 [Test worker] WARN org.appformer.maven.integration.embedder.MavenSettings - Environment variable M2_HOME is not set
+15:31:11.495 [Test worker] DEBUG org.appformer.maven.integration.embedder.MavenEmbedderUtils - Not in OSGi: using plexus based maven parser
+15:31:12.740 [Test worker] DEBUG org.eclipse.aether.internal.impl.DefaultLocalRepositoryProvider - Using manager EnhancedLocalRepositoryManager with priority 10.0 for /Users/user/.m2/repository
+15:31:12.752 [Test worker] DEBUG org.eclipse.aether.internal.impl.DefaultLocalRepositoryProvider - Using manager EnhancedLocalRepositoryManager with priority 10.0 for /Users/user/.m2/repository
+15:31:12.823 [Test worker] DEBUG org.eclipse.aether.internal.impl.DefaultDependencyCollector - Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=1, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=2, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=1, DefaultDependencyCollector.transformTime=5}
+15:31:13.077 [Test worker] WARN org.drools.compiler.kie.builder.impl.KieBuilderImpl - File '-1559567150.drl' is in folder '' but declares package 'org.justo.engine.rule'. It is advised to have a correspondance between package and folder names.
+15:31:13.077 [Test worker] WARN org.drools.compiler.kie.builder.impl.KieBuilderImpl - File '1757765331.drl' is in folder '' but declares package 'org.justo.engine.rule'. It is advised to have a correspondance between package and folder names.
+15:31:13.078 [Test worker] WARN org.drools.compiler.kie.builder.impl.KieBuilderImpl - File '543489103.drl' is in folder '' but declares package 'org.justo.engine.rule'. It is advised to have a correspondance between package and folder names.
+15:31:13.078 [Test worker] WARN org.drools.compiler.kie.builder.impl.KieBuilderImpl - File '828840976.drl' is in folder '' but declares package 'org.justo.engine.rule'. It is advised to have a correspondance between package and folder names.
+15:31:13.078 [Test worker] WARN org.drools.compiler.kie.builder.impl.KieBuilderImpl - File '-474210176.drl' is in folder '' but declares package 'org.justo.engine.rule'. It is advised to have a correspondance between package and folder names.
+15:31:13.078 [Test worker] WARN org.drools.compiler.kie.builder.impl.KieBuilderImpl - File '-118593663.drl' is in folder '' but declares package 'org.justo.engine.rule'. It is advised to have a correspondance between package and folder names.
+15:31:14.198 [Test worker] DEBUG org.drools.compiler.kie.builder.impl.KieRepositoryImpl - KieModule was added: MemoryKieModule[releaseId=org.default:artifact:1.0.0]
+Time to build rules : 3015 ms
+Time to load container: 14 ms
+15:31:14.443 [Test worker] DEBUG org.drools.core.common.DefaultAgenda - State was INACTIVE is now FIRING_ALL_RULES
+15:31:14.522 [Test worker] DEBUG org.drools.core.common.DefaultAgenda - State was FIRING_ALL_RULES is now HALTING
+15:31:14.523 [Test worker] DEBUG org.drools.core.common.DefaultAgenda - State was HALTING is now INACTIVE
+15:31:14.523 [Test worker] DEBUG org.drools.core.common.DefaultAgenda - State was INACTIVE is now DISPOSED
+]]></system-out>
+  <system-err><![CDATA[java.lang.instrument.IllegalClassFormatException: Error while instrumenting org/drools/compiler/lang/DRL6Lexer.
+	at org.jacoco.agent.rt.internal_43f5073.CoverageTransformer.transform(CoverageTransformer.java:94)
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:246)
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:563)
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1017)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:151)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:821)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:719)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:642)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:600)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at org.drools.compiler.compiler.DRLFactory.getDRLLexer(DRLFactory.java:112)
+	at org.drools.compiler.compiler.DRLFactory.buildLexer(DRLFactory.java:59)
+	at org.drools.compiler.compiler.DrlParser.parse(DrlParser.java:163)
+	at org.drools.compiler.compiler.DrlParser.parse(DrlParser.java:154)
+	at org.drools.compiler.compiler.DrlParser.parse(DrlParser.java:144)
+	at org.drools.compiler.builder.impl.KnowledgeBuilderImpl.drlToPackageDescr(KnowledgeBuilderImpl.java:553)
+	at org.drools.compiler.builder.impl.CompositeKnowledgeBuilderImpl$ResourceToPkgDescrMapper.lambda$static$0(CompositeKnowledgeBuilderImpl.java:315)
+	at org.drools.compiler.builder.impl.CompositeKnowledgeBuilderImpl.buildResource(CompositeKnowledgeBuilderImpl.java:197)
+	at org.drools.compiler.builder.impl.CompositeKnowledgeBuilderImpl.buildPackageDescr(CompositeKnowledgeBuilderImpl.java:177)
+	at org.drools.compiler.builder.impl.CompositeKnowledgeBuilderImpl.build(CompositeKnowledgeBuilderImpl.java:105)
+	at org.drools.compiler.builder.impl.CompositeKnowledgeBuilderImpl.build(CompositeKnowledgeBuilderImpl.java:97)
+	at org.drools.compiler.kie.builder.impl.AbstractKieProject.buildKnowledgePackages(AbstractKieProject.java:268)
+	at org.drools.compiler.kie.builder.impl.AbstractKieProject.buildKnowledgePackages(AbstractKieProject.java:216)
+	at org.drools.compiler.kie.builder.impl.AbstractKieProject.verify(AbstractKieProject.java:80)
+	at org.drools.compiler.kie.builder.impl.KieBuilderImpl.buildKieProject(KieBuilderImpl.java:279)
+	at org.drools.compiler.kie.builder.impl.KieBuilderImpl.buildAll(KieBuilderImpl.java:247)
+	at org.drools.compiler.kie.builder.impl.KieBuilderImpl.buildAll(KieBuilderImpl.java:194)
+	at org.justo.engine.rule.service.DroolsEvaluationService.loadContainerFromString(DroolsEvaluationService.kt:55)
+	at org.justo.engine.rule.service.DroolsEvaluationService.group(DroolsEvaluationService.kt:21)
+	at org.justo.engine.rule.service.drools.DroolsEvaluationServiceTest.basic drool test(DroolsEvaluationServiceTest.kt:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:686)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:212)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:208)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:71)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy5.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:133)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.io.IOException: Error while instrumenting org/drools/compiler/lang/DRL6Lexer.
+	at org.jacoco.agent.rt.internal_43f5073.core.instr.Instrumenter.instrumentError(Instrumenter.java:159)
+	at org.jacoco.agent.rt.internal_43f5073.core.instr.Instrumenter.instrument(Instrumenter.java:109)
+	at org.jacoco.agent.rt.internal_43f5073.CoverageTransformer.transform(CoverageTransformer.java:92)
+	... 120 more
+Caused by: org.jacoco.agent.rt.internal_43f5073.asm.MethodTooLargeException: Method too large: org/drools/compiler/lang/DRL6Lexer.mID ()V
+	at org.jacoco.agent.rt.internal_43f5073.asm.MethodWriter.computeMethodInfoSize(MethodWriter.java:2087)
+	at org.jacoco.agent.rt.internal_43f5073.asm.ClassWriter.toByteArray(ClassWriter.java:447)
+	at org.jacoco.agent.rt.internal_43f5073.core.instr.Instrumenter.instrument(Instrumenter.java:90)
+	at org.jacoco.agent.rt.internal_43f5073.core.instr.Instrumenter.instrument(Instrumenter.java:107)
+	... 121 more
+]]></system-err>
+</testsuite>
