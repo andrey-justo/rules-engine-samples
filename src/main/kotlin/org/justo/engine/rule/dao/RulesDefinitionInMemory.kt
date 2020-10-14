@@ -18,9 +18,10 @@ class RulesDefinitionInMemory(
       RuleDefinition("Attributes in B and disabled", "status == 'B' and enabled == false"),
       RuleDefinition("Attributes in A or B", "status == 'A' or status == 'B'"),
       RuleDefinition("Attributes are not C", "status != 'C'"),
-      //RuleDefinition("Attributes are in (C, B)", "status in ('C', 'B')"),
+      RuleDefinition("Attributes are in (C, AB)", "{'C', 'AB'} contains status"),
       RuleDefinition("Attributes with score between 1 and 51", "score > 0 and score < 51"),
       RuleDefinition("Attributes with score between 0 and 50", "score >= 0 and score <= 50"),
+      RuleDefinition("Attributes not are in (C, AB)", "!({'C', 'AB'} contains status)"),
     )
 ) : RulesDefinitionDAO {
 

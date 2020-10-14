@@ -8,7 +8,8 @@ class AttributesInMemory(
       "1" to RuleAttributes(status = "A", enabled = true, score = 1.0),
       "2" to RuleAttributes(status = "B", enabled = false, score = 51.0),
       "3" to RuleAttributes(status = "B", enabled = true, score = 100.0),
-      "4" to RuleAttributes(status = "C", enabled = true, score = 0.0)
+      "4" to RuleAttributes(status = "C", enabled = true, score = 0.0),
+      "5" to RuleAttributes(status = "AB", enabled = true, score = 1.0),
     )
 ) : AttributesDAO {
 
