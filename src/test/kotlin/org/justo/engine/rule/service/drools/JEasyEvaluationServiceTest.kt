@@ -16,14 +16,14 @@ class JEasyEvaluationServiceTest {
   @Test
   fun `basic jeasy test`() {
     val segments = service.group("1")
-    print(segments)
+    println(segments)
     Assertions.assertNotNull(segments)
   }
 
   @Test
   fun `user 4, should not be in not in Segment C`() {
     val segments = service.group("4")
-    print(segments)
+    println(segments)
     Assertions.assertNotNull(segments)
     Assertions.assertTrue(segments.none { it == "Attributes are not C" })
   }
@@ -31,7 +31,7 @@ class JEasyEvaluationServiceTest {
   @Test
   fun `user 5, should be in a contains segment`() {
     val segments = service.group("5")
-    print(segments)
+    println(segments)
     Assertions.assertNotNull(segments)
     Assertions.assertTrue(segments.any { it == "Attributes are in (C, AB)" })
   }
