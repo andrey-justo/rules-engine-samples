@@ -32,6 +32,7 @@ class EasyRuleEvaluationService(
     val facts = Facts()
     facts.add(Fact("enabled", attributes.enabled))
     facts.add(Fact("status", attributes.status))
+    facts.add(Fact("score", attributes.score))
     return facts
   }
 

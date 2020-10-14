@@ -1,3 +1,5 @@
 package org.justo.engine.rule.model
 
-data class RuleAttributes(val status: String, val enabled: Boolean)
+import java.math.BigDecimal
+
+data class RuleAttributes(val status: String, val enabled: Boolean, val score: Double)
